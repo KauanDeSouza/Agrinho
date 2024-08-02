@@ -1,1 +1,36 @@
 
+.body{
+
+    padding: auto;
+    margin: 0%;
+    background-color: burlywood;
+    border: 5px solid black;
+    border-width: 15px;
+    border-style: solid;
+
+
+}
+
+.cabeçalho{
+
+    padding: 0%;
+}
+.informação{
+    
+    padding: auto;
+    margin: 10%;
+
+}
+.cabeçalho_titulo{
+
+    text-align: center;
+    padding: auto;
+    margin: 15%;
+}
+.informação2{
+    
+    padding: auto;
+    margin: 10%;
+
+}
+
