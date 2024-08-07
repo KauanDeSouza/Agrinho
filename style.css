@@ -1,13 +1,14 @@
 
 .body{
 
-    padding: auto;
-    margin: 0%;
+    padding: 0;
+    margin: 5px;
     background-color: burlywood;
     border: 5px solid black;
     border-width: 15px;
     border-style: solid;
-
+    font-size: xx-large;
+color: black;
 
 }
 
@@ -18,7 +19,10 @@
 .informação{
     
     padding: auto;
-    margin: 10%;
+    margin: 20%;
+    font-weight: bold;
+    font-size: 700;
+    text-align: justify;
 
 }
 .cabeçalho_titulo{
@@ -30,7 +34,22 @@
 .informação2{
     
     padding: auto;
-    margin: 10%;
+    margin: 20%;
+    font-size: 700;
+    font-weight: bold;
 
+}
+.foto2{
+    border: 1px solid red;
+    width: 50%;
+}
+.foto{
+    border: 1px solid red;
+    width: 50%;
+}
+.video{
+
+    padding: auto;
+    margin: 15%;
 }
 
