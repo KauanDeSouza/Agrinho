@@ -7,8 +7,8 @@
     border: 5px solid black;
     border-width: 15px;
     border-style: solid;
-    font-size: xx-large;
-color: black;
+    font-size: x-large;
+    color: black;
     text-align: center;
 
 
@@ -80,5 +80,12 @@ color: black;
 }
 .rodape{
     text-align: center;
+    background-color: aliceblue;
+    border-width: 10px;
+    border-style: solid;
+    border-color:  rgb(0, 0, 0);
+    margin: 10px;
+    padding: 30px;
+    text-decoration: underline;
     
 }
