@@ -59,11 +59,11 @@
 
 }
 .foto2{
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
     width: 50%;
 }
 .foto{
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
     width: 50%;
 }
 .video{
