@@ -1,91 +1,146 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.body{
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fef8e4; /* Cor suave de fundo, que remete ao campo e à cidade */
+    color: #333;
+    line-height: 1.6;
+}
 
-    padding: 0px;
-    margin: 1px;
-    background-color: burlywood;
-    border: 5px solid black;
-    border-width: 15px;
-    border-style: solid;
-    font-size: x-large;
-    color: black;
+/* Cabeçalho fixo e navegação */
+.header {
+    background-color: #FF5722; /* Laranja vibrante que traz a sensação de celebração */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header .subtitulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 25px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #FFEB3B; /* Cor amarela brilhante no hover */
+}
+
+/* Efeito de transição para o cabeçalho */
+.header.scrolled {
+    background-color: #388E3C;
+}
+
+/* Seções principais */
+section {
+    padding: 180px 20px 60px 20px; /* Ajusta o padding superior para garantir espaço para o cabeçalho fixo */
     text-align: center;
-
-
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-.cabeçalho{
 
-    padding: 0px;
-
+/* Animacao de fadeIn para as seções */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-.informação{
-    
-    padding: auto;
-    margin: 20px;
-    font-weight: bold;
-    font-size: 700;
-    text-align: justify;
+
+h2 {
+    font-size: 2.5rem; /* Diminui o tamanho do título */
+    color: #FF5722; /* Laranja para destacar o tema de celebração */
+    margin-bottom: 20px;
+    font-weight: 700;
+    padding-top: 40px; /* Garante que o título não fique sobre o cabeçalho */
+}
+
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Estilo para as imagens */
+.foto, .foto2 {
+    width: 60%; /* Diminui bastante a largura da imagem */
+    max-width: 400px; /* Ajusta para uma largura máxima de 400px */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 20px 0;
+}
+
+.foto:hover, .foto2:hover {
+    transform: scale(1.05);
+}
+/* Estilo para a lista */
+ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 30px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+ul li strong {
+    color: #FF5722; /* Laranja para destacar */
+    font-weight: 700;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
     text-align: center;
-    border-width: 10px;
-    border-style: solid;
-    border-color:  rgb(4, 4, 3);
-    background-color: rgb(240, 255, 243);
-
-}
-.cabeçalho_titulo{
-
-    text-align: center;
-    padding: auto;
-    margin: 15%;
-    border-width: 10px;
-    border-style: solid;
-    border-color:  rgb(0, 0, 0);
-    background-color: aliceblue;
-    
-}
-.informação2{
-    
-    padding: auto;
-    margin: 20px;
-    font-size: 700;
-    font-weight: bold;
-    text-align: center;
-    border-width: 10px;
-    border-style: solid;
-    border-color:  rgb(0, 0, 0);
-    background-color: aliceblue;
-    
-
-}
-.foto2{
-    border: 1px solid rgb(0, 0, 0);
-    width: 50%;
-}
-.foto{
-    border: 1px solid rgb(0, 0, 0);
-    width: 50%;
-}
-.video{
-
-    padding: auto;
-    margin: 10px;
-    text-align: center;
-    width: 50%;
-    border-width: 10px;
-    border-style: solid;
-    border-color:  rgb(0, 0, 0);
-    background-color: aliceblue;
-
-}
-.rodape{
-    text-align: center;
-    background-color: aliceblue;
-    border-width: 10px;
-    border-style: solid;
-    border-color:  rgb(0, 0, 0);
-    margin: 10px;
-    padding: 30px;
-    text-decoration: underline;
-    
+    font-size: 1
 }
