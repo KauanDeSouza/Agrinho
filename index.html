@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrinho 2025 - Festejando a Conexão Campo-Cidade</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,19 +24,26 @@
                 <li><a href="#rodape">Referências</a></li>
             </ul>
         </nav>
+        <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
     </header>
 
     <!-- Seção 1: Conexão Campo-Cidade -->
     <section class="informacao" id="informacao">
     <h2>Celebrando a Conexão Campo e Cidade</h2>
-    <img class="foto" src="campo.jpeg" alt="Conexão entre o campo e a cidade">
+    <img class="foto" src="campo.jpeg" alt="Conexão entre o campo e a cidade" title="Imagem mostrando um trator agrícola. Fonte: Pinterest, 2025.">
     <p>O Agrinho 2025 celebra a crescente união entre o campo e a cidade. O agronegócio tem mostrado que a conexão entre esses dois mundos é essencial para a prosperidade da sociedade moderna. Ele não apenas abastece as cidades com alimentos frescos e sustentáveis, mas também cria oportunidades de emprego e fomenta a inovação no meio urbano. Este evento celebra a força dessa parceria e suas infinitas possibilidades para o futuro, com destaque para a sustentabilidade e as novas tecnologias que tornam essa integração cada vez mais forte.</p>
 </section>
 
     <!-- Seção 2: Inovações no Agronegócio (Drones e Tecnologia) -->
     <section class="informacao2" id="informacao2">
         <h2>Inovações no Agronegócio: Drones e Tecnologia</h2>
-        <img class="foto2" src="drone.jpeg" alt="Drones na Agricultura">
+        <img class="foto2" src="drone.jpeg" alt="Drones na Agricultura" title="Imagem mostrando drones sobrevoando um campo agrícola. Fonte: ....">
         <p>Os avanços tecnológicos, como o uso de drones na agricultura, são essenciais para a revolução no agronegócio. Em 2025, estamos testemunhando uma transformação na forma como o campo e a cidade se conectam através da tecnologia, proporcionando mais eficiência, sustentabilidade e precisão. Os drones são ferramentas poderosas que permitem monitoramento remoto das plantações, análise de solo, controle de irrigação, e muito mais, tornando o trabalho no campo mais inteligente e produtivo.</p>
         <ul>
             <li><strong>Monitoramento de Culturas:</strong> Drones equipados com câmeras e sensores oferecem imagens detalhadas das plantações, permitindo monitoramento constante e prevenindo problemas.</li>
@@ -50,5 +60,7 @@
         <p>Referência do Campo: <a href="https://www.embrapa.br/olhares-para-2030/artigo">Embrapa</a></p>
         <p>Referência Drones: <a href="https://nutricaodesafras.com.br/drone-na-agricultura">Nutrição de Safras</a></p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="mains.js"></script>
 </body>
 </html>

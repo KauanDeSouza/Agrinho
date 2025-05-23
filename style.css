@@ -104,8 +104,9 @@ p {
 }
 
 /* Estilo para as imagens */
-.foto, .foto2 {
-    width: 60%; /* Diminui bastante a largura da imagem */
+.foto,
+.foto2 {
+    width: 50%; /* Diminui bastante a largura da imagem */
     max-width: 400px; /* Ajusta para uma largura máxima de 400px */
     height: auto;
     border-radius: 15px;
